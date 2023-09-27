@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        let ciudad = prompt("Introduce tu ciudad");
+        let edad = prompt("Introduce tu edad");
+        let res
+        if(ciudad == "Alicante")
+        {
+            if(edad >= 18 && edad <= 35 )
+            {
+                res = "Puedes acceder al carnet de empresarios emprendedores"
+            }
+            else
+            {
+                res = "NO puedes acceder al carnet de empresarios emprendedores" 
+            }
+        }
+        else
+        {
+            res = "NO puedes acceder al carnet de empresarios emprendedores" 
+        }
+
+       alert(res)
+    </script>
+</body>
+</html>

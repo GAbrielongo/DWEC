@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        let hermanos = prompt("Introduce cuantos hermanos tienes");
+        let cantidad = prompt("Introduce la cantidad de dinero");
+        let res
+        if(hermanos >= 3)
+        {
+            res = cantidad - (cantidad * 0.15);
+        }
+        else if (hermanos >= 1 && hermanos <3)
+        {
+            res = cantidad - (cantidad * 0.05);
+        }
+        else
+        {
+            res = cantidad;
+        }
+
+       alert("La cantidad a pager es: " + res)
+    </script>
+</body>
+</html>
