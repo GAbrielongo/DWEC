@@ -5,12 +5,14 @@
 </head>
 <body>
     <script>
-        let i;
-        let num;
-        for (int i = 0; i > num ; i++) // con whileee
+        let num = parseInt(prompt("Introduc tu numero"))
+        let suma = 0;
+        while ( num != 0)
         {
-            
+            suma = suma + num
+            num = parseInt(prompt("Introduc tu numero"))
         }
+        alert("El total es: " + suma)
         
         
     </script>

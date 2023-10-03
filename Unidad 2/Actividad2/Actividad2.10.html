@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Introduce el numero a adivinar"))
+
+        let num2 = parseInt(prompt("Adivina el numero"))
+        while (num != num2)
+        {
+            if (num2 < num)
+            {
+                alert("El numero es mas grande")
+                num2 = parseInt(prompt("Adivina el numero"))
+
+            }
+            else 
+            {
+                alert("El numero es mas pequeño")
+                num2 = parseInt(prompt("Adivina el numero"))
+
+            }
+        }
+        alert("Correcto el Numero es: " + num)
+
+    </script>
+</body>
+</html>
