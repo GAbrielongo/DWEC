@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("Introduce tu nombre")
+        let apellidos = prompt("Introduce tus Apellidos")
+        let edad = parseInt(prompt("Introduce tu edad"))
+        let salario = parseInt( prompt("Introduce tu salario"))
+        let mensaje = ""
+
+        if(salario > 2000 )
+        {
+            mensaje = alert(apellidos + ", " + nombre + ", " + edad + " años" + "\n" + salario + "€" )
+        }
+        else if (salario >= 1000 && salario < 2000)
+        {
+            if (edad > 45)
+            {
+                salario += salario * 0.03
+                mensaje = alert(apellidos + ", " + nombre + ", " + edad + " años" + "\n" + salario + "€" )
+            }
+            else
+            {
+                salario += salario * 0.10
+                mensaje = alert(apellidos + ", " + nombre + ", " + edad + " años" + "\n" + salario + "€" )
+            }
+        }
+        else if (salario < 1000)
+        {
+            if(edad < 30 )
+            {
+                salario = 1100
+                mensaje = alert(apellidos + ", " + nombre + ", " + edad + " años" + "\n" + salario + "€" )
+            }
+            if(edad >= 30 && salario <= 45)
+            {
+                salario += salario * 0.03
+                mensaje = alert(apellidos + ", " + nombre + ", " + edad + " años" + "\n" + salario + "€" )
+            }
+            if (edad > 45)
+            {
+                salario += salario * 0.15
+                mensaje = alert(apellidos + ", " + nombre + ", " + edad + " años" + "\n" + salario + "€" )
+            }
+        }
+    </script>
+</body>
+</html>
